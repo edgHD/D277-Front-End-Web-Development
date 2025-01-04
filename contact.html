@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - New York</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Header -->
+    <header id="main-header"></header>
+
+    <!-- Main Navigation -->
+    <nav id="main-nav"></nav>
+
+    <!-- Main Container -->
+    <div class="container d-flex justify-content-center mt-3">
+        <div class="row">
+            
+            <!-- Contact Form Section -->
+            <section class="col-12 col-xl-8">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <h1 class="text-center">Contact</h1>
+                    </div>
+                    <form id="contact-form" class="col-12">
+                        <div class="row">
+                            <div class="col-6 mt-3">
+                                <label for="inputName" class="form-label">First Name</label>
+                                <input id="inputName" type="text" class="form-control" aria-label="First Name" required>
+                            </div>
+                            <div class="col-6 mt-3">
+                                <label for="inputSurname" class="form-label">Last Name</label>
+                                <input id="inputSurname" type="text" class="form-control" aria-label="Last Name" required>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input id="inputEmail" type="email" class="form-control" placeholder="example@mail.com" aria-label="Email" required>
+                            </div>
+                            <div class="col-12 col-md-6 mt-3">
+                                <label for="inputEmailConf" class="form-label">Confirm Email</label>
+                                <input id="inputEmailConf" type="email" class="form-control" placeholder="example@mail.com" aria-label="Confirm Email" required>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea id="inputMessage" class="form-control" rows="12" placeholder="Ask any question..." aria-label="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-3">
+                                <button id="submitForm" type="submit" class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Business Hours Section -->
+            <aside class="col-12 col-xl-4 ps-auto ps-xl-5 mt-3 mt-xl-0 text-center d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="businessHoursTitle">Business Hours</h2>
+                    </div>
+                    <div class="col-12">
+                        <table id="businessHours" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Monday - Friday</th>
+                                    <th>Saturday</th>
+                                    <th>Sunday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6am - 12pm</td>
+                                    <td>8am - 12pm</td>
+                                    <td>OFF</td>
+                                </tr>
+                                <tr>
+                                    <td>2pm - 8pm</td>
+                                    <td>OFF</td>
+                                    <td>OFF</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer id="main-footer"></footer>
+
+    <!-- Bootstrap JS -->
+    <script src="bs/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets.js"></script>
+    <script src="contact-alert.js"></script>
+
+</body>
+</html>
